@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221955C62BB5AD6B007C454E /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221955C52BB5AD6B007C454E /* Inter-Regular.ttf */; };
+		229622C92BB721420039C6C9 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229622C82BB721420039C6C9 /* CreateAccountView.swift */; };
+		229622CB2BB73BDC0039C6C9 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229622CA2BB73BDC0039C6C9 /* InputView.swift */; };
+		22AA614D2BB7F6F700C866B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA614C2BB7F6F700C866B5 /* LoginView.swift */; };
 		22D6FD312B7D3D6F00A269D9 /* PhotoSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6FD302B7D3D6F00A269D9 /* PhotoSnapApp.swift */; };
 		22D6FD332B7D3D6F00A269D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6FD322B7D3D6F00A269D9 /* ContentView.swift */; };
 		22D6FD352B7D3D7200A269D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D6FD342B7D3D7200A269D9 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221955C52BB5AD6B007C454E /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		229622C82BB721420039C6C9 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		229622CA2BB73BDC0039C6C9 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		22AA614C2BB7F6F700C866B5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		22D6FD2D2B7D3D6F00A269D9 /* PhotoSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D6FD302B7D3D6F00A269D9 /* PhotoSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSnapApp.swift; sourceTree = "<group>"; };
 		22D6FD322B7D3D6F00A269D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +79,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221955C42BB5ACED007C454E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				221955C52BB5AD6B007C454E /* Inter-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		229622C12BB720280039C6C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22D6FD302B7D3D6F00A269D9 /* PhotoSnapApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		229622C22BB7203D0039C6C9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				229622CA2BB73BDC0039C6C9 /* InputView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		229622C32BB720470039C6C9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				229622C52BB720710039C6C9 /* Authentification */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		229622C42BB720550039C6C9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				22D6FD322B7D3D6F00A269D9 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		229622C52BB720710039C6C9 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				22AA614C2BB7F6F700C866B5 /* LoginView.swift */,
+				229622C82BB721420039C6C9 /* CreateAccountView.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
 		22D6FD242B7D3D6F00A269D9 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +151,11 @@
 		22D6FD2F2B7D3D6F00A269D9 /* PhotoSnap */ = {
 			isa = PBXGroup;
 			children = (
-				22D6FD302B7D3D6F00A269D9 /* PhotoSnapApp.swift */,
-				22D6FD322B7D3D6F00A269D9 /* ContentView.swift */,
+				229622C42BB720550039C6C9 /* Root */,
+				229622C32BB720470039C6C9 /* Core */,
+				229622C22BB7203D0039C6C9 /* Components */,
+				229622C12BB720280039C6C9 /* App */,
+				221955C42BB5ACED007C454E /* Fonts */,
 				22D6FD342B7D3D7200A269D9 /* Assets.xcassets */,
 				22D6FD362B7D3D7200A269D9 /* Preview Content */,
 			);
@@ -232,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D6FD382B7D3D7200A269D9 /* Preview Assets.xcassets in Resources */,
+				221955C62BB5AD6B007C454E /* Inter-Regular.ttf in Resources */,
 				22D6FD352B7D3D7200A269D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229622C92BB721420039C6C9 /* CreateAccountView.swift in Sources */,
+				229622CB2BB73BDC0039C6C9 /* InputView.swift in Sources */,
 				22D6FD332B7D3D6F00A269D9 /* ContentView.swift in Sources */,
+				22AA614D2BB7F6F700C866B5 /* LoginView.swift in Sources */,
 				22D6FD312B7D3D6F00A269D9 /* PhotoSnapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
